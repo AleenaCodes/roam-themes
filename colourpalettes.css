@@ -1,0 +1,64 @@
+:root {
+  --background-1: #333333;
+  --grey-1: #c5c8c6;
+  --light-pink-1: #fce4ec;
+  --light-pink-2: #f8bbd0;
+  --dark-pink-1: #c2185b;
+  --dark-pink-2: #880e4f;
+  --blue-1: #A5CCD1;
+}
+
+:root {
+  --background-colour: #333333;
+  --contrast-colour: #D8DBE2;
+  --title-colour: #BF1363;
+  --highlight-colour-1: #FCD3DE;
+  --highlight-colour-2: #FF99C9;
+}
+
+:root {
+  --background-colour: #450920;
+  --contrast-colour: #F9DBBD;
+  --title-colour: #DA627D;
+  --highlight-colour-1: #FFA5AB;
+  --highlight-colour-2: #A53860;
+}
+
+/* Potentials */
+
+$rich-black-fogra-39: #000000ff;
+$dark-purple: #3d2645ff;
+$byzantium: #832161ff;
+$cerise: #da4167ff;
+$ghost-white: #f0eff4ff;
+
+
+$russian-violet: #231942ff;
+$purple-navy: #5e548eff;
+$african-violet: #9f86c0ff;
+$lilac: #be95c4ff;
+$pink-lavender: #e0b1cbff;
+
+$glossy-grape: #9c89b8ff;
+$kobi: #f0a6caff;
+$pink-lavender: #efc3e6ff;
+$magnolia: #f0e6efff;
+$light-periwinkle: #b8beddff;
+
+$gainsboro: #d8e2dcff;
+$champagne-pink: #ffe5d9ff;
+$pink: #ffcad4ff;
+$light-pink: #f4acb7ff;
+$mountbatten-pink: #9d8189ff;
+
+$space-cadet: #392f5aff;
+$amethyst: #8b5fbfff;
+$bright-lilac: #c989ebff;
+$mauve: #f7aef8ff;
+$cotton-candy: #fdc5f5ff;
+
+$peach-crayola: #ffb997ff;
+$light-coral: #f67e7dff;
+$twilight-lavender: #843b62ff;
+$russian-violet: #0b032dff;
+$eggplant: #74546aff;
