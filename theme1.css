@@ -1,0 +1,119 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Colours */
+
+:root {
+  --background-1: #333333;
+  --light-pink-1: #fce4ec;
+  --light-pink-2: #f8bbd0;
+  --dark-pink-1: #c2185b;
+  --grey-1: #c5c8c6;
+}
+
+/* Full page styling */
+
+.roam-body {
+  	background-color: var(--background-1);
+  	/*background-color: white;*/
+}
+
+/* === Navigation styling === */
+
+.roam-sidebar-container {
+  background-color: var(--background-1) !important;
+  border-right: var(--light-pink-2) solid 1px;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+/* Collapse button  */
+.roam-sidebar-container .bp3-button::before {
+  color: var(--light-pink-2);
+}
+
+/* Email */
+.roam-sidebar-container button div {
+  font-family: 'Open-Sans', sans-serif;
+  color: var(--grey-1) !important;
+}
+
+/* Page titles */
+.roam-sidebar-container .log-button {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400 !important;
+  color: var(--dark-pink-1) !important;
+}
+
+/* Shortcuts title */
+.starred-pages-wrapper span {
+  font-family: 'Open-Sans', sans-serif;
+  color: var(--light-pink-2);
+}
+
+/* Shortcuts star icon */
+.starred-pages-wrapper .bp3-icon-star::before {
+  color: var(--light-pink-2);
+}
+
+/* Starred page */
+.starred-pages .page {
+  color: var(--dark-pink-1) !important;
+}
+
+/* Roam logo */
+#roam-sidebar-logo {
+	opacity: 0.7;
+}
+
+/* === Topbar styling === */
+
+.roam-topbar {
+  background-color: var(--background-1);
+  border-bottom: var(--light-pink-2) solid 1px;
+}
+
+/* Saving icon (saving) */
+.rm-saving-remote {
+  background-color: var(--light-pink-2) !important;
+}
+
+/* Saving icon (saved) */
+.rm-synced {
+  background-color: var(--dark-pink-1) !important;
+}
+
+/* Search icon */
+.rm-find-or-create-wrapper .bp3-icon-search {
+  color: var(--grey-1);
+}
+
+/* Search input */
+#find-or-create-input {
+  color: var(--light-pink-2);
+  background-color: var(--background-1);
+  border: var(--grey-1) solid 1px;
+}
+
+/* Buttons */
+.roam-topbar .bp3-button::before, .roam-topbar .bp3-icon::before {
+  color: var(--light-pink-2);
+}
+
+/* Main content styling */
+
+
+
+
+/* Popups menus */
+.bp3-menu {
+  background-color: var(--background-1);
+  border: var(--grey-1) solid 1px;
+  color: white;
+}
+
+.bp3-popover-arrow-fill {
+  fill: var(--background-1) !important;
+}
+
+.bp3-popover-arrow-border { /* TODO */
+  fill: var(--grey-1) solid 1px !important;
+}
