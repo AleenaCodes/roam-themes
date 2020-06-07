@@ -1,43 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-/* Colours */
-
-/*:root {
-  --background-1: #333333;
-  --grey-1: #c5c8c6;
-  --light-pink-1: #fce4ec;
-  --light-pink-2: #f8bbd0;
-  --dark-pink-1: #c2185b;
-  --dark-pink-2: #880e4f;
-  --blue-1: #A5CCD1;
-}*/
+/* === Colours === */
 
 :root {
   --background-colour: #333333;
-  --contrast-colour: #D8DBE2;
-  --title-colour: #BF1363;
-  --highlight-colour-1: #FCD3DE;
-  --highlight-colour-2: #FF99C9;
+  --edges-colour: #394b59;
+  --contrast-colour: #c5c8c6;
+  --title-colour: #a5ccd1;
+  --highlight-colour-1: #f8bbd0;
+  --highlight-colour-2: #c2185b;
 }
 
-/* Full page styling */
-
+/* === Full page styling === */
 .roam-body {
   	background-color: var(--background-colour);
-  	/*background-color: white;*/
+  	font-family: 'Open-Sans', sans-serif !important;
+}
+
+/* Scrollbars */
+.roam-body-main {
+  scrollbar-color: var(--edges-colour) var(--background-colour);
+}
+
+
+/* Icons */
+.bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before {
+  color: var(--highlight-colour-1) !important;
 }
 
 /* === Navigation styling === */
 
 .roam-sidebar-container {
   background-color: var(--background-colour) !important;
-  border-right: var(--highlight-colour-1) solid 1px;
+  border-right: var(--edges-colour) solid 1px;
   font-family: 'Open-Sans', sans-serif;
-}
-
-/* Collapse button  */
-.roam-sidebar-container .bp3-button::before {
-  color: var(--highlight-colour-1);
 }
 
 /* Email */
@@ -59,10 +55,7 @@
   color: var(--highlight-colour-1);
 }
 
-/* Shortcuts star icon */
-.starred-pages-wrapper .bp3-icon-star::before {
-  color: var(--highlight-colour-1);
-}
+
 
 /* Starred page */
 .starred-pages .page {
@@ -78,7 +71,7 @@
 
 .roam-topbar {
   background-color: var(--background-colour);
-  border-bottom: var(--highlight-colour-1) solid 1px;
+  border-bottom: var(--edges-colour) solid 1px;
 }
 
 /* Saving icon (saving) */
@@ -103,28 +96,155 @@
   border: var(--contrast-colour) solid 1px;
 }
 
-/* Buttons */
-.roam-topbar .bp3-button::before, .roam-topbar .bp3-icon::before {
-  color: var(--highlight-colour-1);
-}
-
 /* === Main content styling === */
 
-.rm-title-display {
+/* Page title */
+.roam-article h1, .roam-article h1 span {
   color: var(--title-colour) !important;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* Subtitles */
+h1.rm-level1 {
+  color: var(--contrast-colour) !important;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 700;
+}
+
+h2.rm-level2 {
+  color: var(--contrast-colour);
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 600;
+}
+
+h3.rm-level3 {
+  color: var(--contrast-colour);
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* Main text */
+.roam-block-container {
+  color: var(--contrast-colour);
+  font-family: 'Open-Sans', sans-serif;
+}
+
+/* Remove avatars */
+.rm-edit-view-wrapper {
+  display: none;
+}
+
+/* Bullet */
+.simple-bullet-inner {
+  background-color: var(--highlight-colour-1) !important;
+}
+
+.roam-bullet-closed {
+  background-color: var(--contrast-colour)
+}
+
+.roam-bullet-closed .simple-bullet-inner {
+  background-color: var(--background-colour) !important;
+}
+
+
+/* Quote */
+.rm-block-ref:hover {
+  background-color: var(--contrast-colour);
+  color: var(--background-colour);
+}
+
+/* Page link */
+.rm-page-ref-link-color {
+  color: var(--title-colour);
+}
+
+/* Hashtag */
+.rm-page-ref-tag {
+  color: var(--contrast-colour);
+  opacity: 0.4;
+}
+
+/*References */
+.rm-reference-main {
+  color: var(--contrast-colour) !important;
+}
+
+/* References page title */
+.rm-mentions .rm-ref-page-view-title a {
+  color: var(--title-colour);
+}
+
+/* Reference item */
+.rm-reference-item {
+  background-color: var(--background-colour);
+}
+
+/* Breadcrumbs in reference */
+.parent-path-wrapper {
+  color: var(--contrast-colour);
+}
+
+/* Reference linking button */
+.rm-reference-main .bp3-button {
+  color: var(--contrast-colour);
+}
+
+/* Right sidebar */
+
+#right-sidebar {
+  background-color: var(--background-colour) !important;
+}
+
+#roam-right-sidebar-content {
+  color: var(--title-colour);
+}
+
+/* Headings */
+#right-sidebar h1 a, #right-sidebar h2 a, #right-sidebar h3 a {
+  font-family: 'Open-Sans', sans-serif;
+  color: var(--title-colour);
+}
+
+/* === Popup menu === */
+
+/*Filter popup menu */
+.bp3-popover-content {
+  background-color: var(--background-colour) !important;
+  border: var(--edges-colour) solid 1px;
+  color: var(--contrast-colour) !important;
+}
+
+/*Filter menu button */
+.bp3-popover-content .bp3-button {
+    background-color: var(--background-colour);
+  	border: var(--edges-colour) solid 1px;
+  	color: var(--contrast-colour);
 }
 
 /* Popups menus */
 .bp3-menu {
   background-color: var(--background-colour);
-  border: var(--contrast-colour) solid 1px;
-  color: white;
+  border: var(--edges-colour) solid 1px;
+  color: var(--contrast-colour);
 }
 
-.bp3-popover-arrow-fill {
-  fill: var(--background-colour) !important;
+.bp3-popover-arrow {
+  display: none;
 }
 
-.bp3-popover-arrow-border { /* TODO */
-  fill: var(--contrast-colour) solid 1px !important;
+/*Buttons in popup menu */
+.bp3-menu button {
+  background-color: var(--background-colour) !important;
+  border: none;
 }
+
+/* TODO
+style block types
+dialogs `bp3-dialog`
+emoji popup menu looks bad `emoji-mart`
+give everything open sans font
+style pagin heading when clicked
+sort out filter buttons - some sort of gradient being applied
+*/
