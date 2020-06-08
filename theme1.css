@@ -17,12 +17,16 @@
   	font-family: 'Open-Sans', sans-serif !important;
 }
 
-.roam-body-main { /* Scrollbars */
+.roam-body-main { /* Scrollbars, only works in Firefox */
   scrollbar-color: var(--edges-colour) var(--background-colour);
 }
 
 .bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before { /* Icons */
   color: var(--highlight-colour-1) !important;
+}
+
+.bp3-icon svg {
+  color: var(--highlight-colour-1);
 }
 
 .bp3-button {
@@ -164,7 +168,7 @@ h3.rm-level3 {
   color: var(--title-colour);
 }
 
-.roam-highlight {
+.roam-highlight { /* Text highlight */
   background-color: var(--highlight-colour-1);
   color: var(--background-colour);
 }
@@ -185,9 +189,60 @@ h3.rm-level3 {
   color: var(--title-colour) !important;
 }
 
+/* Datepicker */
+.bp3-datepicker {
+  background-color: var(--background-colour);
+  border: var(--edges-colour);
+}
+
+.bp3-datepicker select {
+  color: var(--contrast-colour);
+}
+
+/* Query */
+.rm-query {
+  border: var(--edges-colour) solid 1px;
+}
+
+.rm-query-title {
+  color: var(--contrast-colour) !important;
+  background-color: var(--edges-colour-semi-transparent) !important;
+}
+
+.bp3-slider .bp3-intent-primary, span.bp3-slider-label { /*Slider */
+  background-color: var(--title-colour) !important;
+}
+
+/* Diagram */
+.rm-block-text svg {
+  background-color: var(--background-colour) !important;
+  border: var(--edges-colour) solid 1px !important;
+}
+
+.rm-block-text svg rect {
+  fill: var(--background-colour);
+  stroke: var(--contrast-colour);
+}
+
+/* Kanban board */
+
+.kanban-board {
+  background-color: var(--background-colour);
+  border: var(--edges-colour) solid 1px;
+}
+
+.kanban-column {
+  background-color: var(--edges-colour-semi-transparent);
+  border: var(--edges-colour) solid 1px;
+}
+
+.kanban-card {
+  background-color: var(--background-colour);
+}
+
 /* === References section (bottom of page) === */
 
-.rm-reference-main { /*References */
+.rm-reference-main, .rm-reference-main strong { /*References */
   color: var(--contrast-colour) !important;
 }
 
@@ -259,11 +314,6 @@ h3.rm-level3 {
 }
 
 /* TODO
-style block types
-	date picker
-	diagram
-	kanban board
-	queries
 give everything open sans font
 */
 
@@ -272,8 +322,9 @@ give everything open sans font
 */
 
 /* Left alone *
+fullscreen diagrams
 todo done state
-pomodoro (didn't need much)
+mentions don't have a slight background on them
 dialogs `bp3-dialog`
 emoji popup menu looks bad `emoji-mart`
 page heading when clicked
