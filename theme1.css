@@ -193,9 +193,10 @@ h3.rm-level3 {
 }
 
 .bp3-popover-content .bp3-button { /*Filter menu button */
-    background-color: var(--background-colour);
-  	border: var(--edges-colour) solid 1px;
-  	color: var(--contrast-colour);
+  background-color: var(--background-colour);
+  background-image: none;
+  border: var(--edges-colour) solid 1px;
+  color: var(--contrast-colour);
 }
 
 .bp3-menu { /* Popups menus */
@@ -233,10 +234,11 @@ style block types
 	kanban board
 	word count
 	queries
+give everything open sans font
+*/
 
+/* Left alone *
 dialogs `bp3-dialog`
 emoji popup menu looks bad `emoji-mart`
-give everything open sans font
-style page heading when clicked
-sort out filter buttons - some sort of gradient being applied
+page heading when clicked
 */
