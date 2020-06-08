@@ -4,6 +4,7 @@
 :root {
   --background-colour: #333333;
   --edges-colour: #394b59;
+  --edges-colour-semi-transparent: rgb(57, 75, 89, 0.2);
   --contrast-colour: #c5c8c6;
   --title-colour: #a5ccd1;
   --highlight-colour-1: #f8bbd0;
@@ -22,6 +23,10 @@
 
 .bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before { /* Icons */
   color: var(--highlight-colour-1) !important;
+}
+
+.bp3-button {
+  color: var(--contrast-colour) !important;
 }
 
 /* === Navigation styling === */
@@ -124,16 +129,17 @@ h3.rm-level3 {
 }
 
 .roam-bullet-closed {
-  background-color: var(--contrast-colour)
+  background-color: var(--contrast-colour);
 }
 
 .roam-bullet-closed .simple-bullet-inner {
   background-color: var(--background-colour) !important;
 }
 
-.rm-block-ref:hover { /* Quote */
-  background-color: var(--contrast-colour);
-  color: var(--background-colour);
+/* === Content blocks === */
+
+.block-ref-count-button { /* Block reference count */
+  color: var(--contrast-colour) !important;
 }
 
 .rm-page-ref-link-color { /* Page link */
@@ -145,9 +151,41 @@ h3.rm-level3 {
   opacity: 0.4;
 }
 
-.rm-embed-container { /* Block embed */
-  background-color: transparent;
+.rm-block-ref:hover { /* Quote */
+  background-color: var(--contrast-colour);
+  color: var(--background-colour);
 }
+
+.rm-embed-container, .rm-embed-container .roam-block-container { /* Block embed */
+  background-color:  var(--edges-colour-semi-transparent);
+}
+
+.rm-alias { /* Alias */
+  color: var(--title-colour);
+}
+
+.roam-highlight {
+  background-color: var(--highlight-colour-1);
+  color: var(--background-colour);
+}
+
+.rm-block-text button.bp3-button { /* Word count, pomodoro */
+  background-color: var(--background-colour);
+  background-image: none;
+  border: var(--edges-colour) solid 1px;
+  color: var(--contrast-colour);
+}
+
+.rm-encrypted-block { /* Encrypted block */
+  background-color: var(--background-colour);
+  color: var(--contrast-colour);
+}
+
+.bp3-popover-target span { /* Calc block */
+  color: var(--title-colour) !important;
+}
+
+/* === References section (bottom of page) === */
 
 .rm-reference-main { /*References */
   color: var(--contrast-colour) !important;
@@ -222,22 +260,20 @@ h3.rm-level3 {
 
 /* TODO
 style block types
-	todo (done state)
-	alias
-	pomodoro
 	date picker
-	highlight
-	latex
-	calc
-	encrypted text
 	diagram
 	kanban board
-	word count
 	queries
 give everything open sans font
 */
 
+/* Refactor
+.bp3-button at the top is probably catching a lot of stuff
+*/
+
 /* Left alone *
+todo done state
+pomodoro (didn't need much)
 dialogs `bp3-dialog`
 emoji popup menu looks bad `emoji-mart`
 page heading when clicked
