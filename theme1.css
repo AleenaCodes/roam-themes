@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 /* === Colours === */
-
 :root {
   --background-colour: #333333;
   --edges-colour: #394b59;
@@ -21,7 +20,6 @@
 .roam-body-main {
   scrollbar-color: var(--edges-colour) var(--background-colour);
 }
-
 
 /* Icons */
 .bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before {
@@ -55,8 +53,6 @@
   color: var(--highlight-colour-1);
 }
 
-
-
 /* Starred page */
 .starred-pages .page {
   color: var(--title-colour) !important;
@@ -64,7 +60,7 @@
 
 /* Roam logo */
 #roam-sidebar-logo {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* === Topbar styling === */
@@ -234,7 +230,14 @@ h3.rm-level3 {
   display: none;
 }
 
-/*Buttons in popup menu */
+/*Slash dropdown menu */
+.bp3-elevation-3 {
+  background-color: var(--background-colour) !important;
+  border: var(--edges-colour) solid 1px;
+  color: var(--contrast-colour);
+}
+
+/*Buttons in bullet popup menu */
 .bp3-menu button {
   background-color: var(--background-colour) !important;
   border: none;
