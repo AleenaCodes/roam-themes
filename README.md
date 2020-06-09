@@ -5,6 +5,8 @@ A collection of themes for Roam Research
 - Most changes are just colour to make things easier on the eye
 - Also did a little bit of hiding things and adding spacing
 
+Import via `@import url('<themename>');` e.g. `@import url('https://aleenacodes.github.io/roam-themes/mermaid-dark.css');`
+
 Things I've left alone (for now)
 
 - Fullscreen diagrams
