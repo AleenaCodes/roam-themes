@@ -9,12 +9,22 @@
 }
 
 /* === Full page styling === */
+
 .roam-body {
   background-color: var(--background-colour);
 }
 
-.roam-body-main { /* Scrollbars, only works in Firefox */
+/* Scrollbar */
+.roam-body-main {
   scrollbar-color: var(--edges-colour) var(--background-colour);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-colour);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--edges-colour);
 }
 
 .bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before, .bp3-icon svg { /* Icons */
@@ -84,7 +94,7 @@
 
 /* === Main content styling === */
 
-.roam-article h1, .roam-article h1 span { /* Page title */
+.rm-title-display, .rm-title-display span { /* Page heading */
   color: var(--title-colour) !important;
   font-weight: 600;
 }
@@ -220,7 +230,6 @@ rm-block-text a:hover {
 }
 
 /* Kanban board */
-
 .kanban-board {
   background-color: var(--background-colour);
   border: 1px solid var(--edges-colour);
@@ -276,27 +285,19 @@ rm-block-text a:hover {
   color: var(--contrast-colour) !important;
 }
 
+.bp3-popover-arrow {
+  display: none;
+}
+
 .bp3-popover-content .bp3-button { /*Filter menu button */
   background-image: none;
 }
 
-.bp3-popover-arrow {
-  display: none;
+.bp3-button sub {
+  padding-left: 5px;
 }
 
 .bp3-menu button { /*Buttons in bullet popup menu */
   background-color: var(--background-colour) !important;
   border: none;
 }
-
-
-/* Left alone *
-fullscreen diagrams
-todo done state
-code blocks
-embedded pdf
-embedded tweets
-mentions don't have a slight background on them
-dialogs `bp3-dialog`
-emoji popup menu looks bad `emoji-mart`
-*/
