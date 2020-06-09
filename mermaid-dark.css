@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
 
 /* === Main content styling === */
 
-.rm-title-display, .rm-title-display span { /* Page heading */
+.roam-article h1, .rm-title-display, .rm-title-display span { /* Page heading */
   color: var(--title-colour) !important;
   font-weight: 600;
 }
