@@ -1,0 +1,293 @@
+/* === Full page styling === */
+
+.roam-body {
+  background-color: var(--background-colour);
+}
+
+/* Scrollbar */
+.roam-body-main {
+  scrollbar-color: var(--edges-colour) var(--background-colour);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-colour);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--edges-colour);
+}
+
+.bp3-button::before, .bp3-icon-small::before, .bp3-icon::before, .bp3-icon-standard::before, .bp3-icon svg { /* Icons */
+  color: var(--highlight-colour-1) !important;
+}
+
+.bp3-button {
+  color: var(--contrast-colour) !important;
+}
+
+#buffer {
+  display: none !important;
+}
+
+/* === Navigation styling === */
+
+.roam-sidebar-container {
+  background-color: var(--background-colour) !important;
+  border-right: 1px solid var(--edges-colour);
+}
+
+.roam-sidebar-container button div { /* Email */
+  color: var(--contrast-colour) !important;
+}
+
+.roam-sidebar-container .log-button { /* Page titles */
+  font-weight: 400 !important;
+  color: var(--title-colour) !important;
+}
+
+.starred-pages-wrapper span { /* Shortcuts title */
+  color: var(--highlight-colour-1);
+}
+
+.starred-pages .page { /* Starred page */
+  color: var(--title-colour) !important;
+}
+
+#roam-sidebar-logo { /* Roam logo */
+  opacity: 0.7;
+}
+
+/* === Topbar styling === */
+
+.roam-topbar {
+  background-color: var(--background-colour);
+  border-bottom: 1px solid var(--edges-colour);
+}
+
+.rm-saving-remote { /* Saving icon (saving) */
+  background-color: var(--highlight-colour-1) !important;
+}
+
+.rm-synced { /* Saving icon (saved) */
+  background-color: var(--title-colour) !important;
+}
+
+.rm-find-or-create-wrapper .bp3-icon-search { /* Search icon */
+  color: var(--contrast-colour);
+}
+
+#find-or-create-input { /* Search input */
+  color: var(--highlight-colour-1);
+  background-color: var(--background-colour);
+  border: 1px solid var(--contrast-colour);
+}
+
+/* === Main content styling === */
+
+.roam-article h1, .rm-title-display, .rm-title-display span { /* Page heading */
+  color: var(--title-colour) !important;
+  font-weight: 600;
+}
+
+/* Subtitles */
+h1.rm-level1 {
+  color: var(--contrast-colour) !important;
+  font-weight: 700;
+}
+
+h2.rm-level2 {
+  color: var(--contrast-colour);
+  font-weight: 600;
+}
+
+h3.rm-level3 {
+  color: var(--contrast-colour);
+  font-weight: 400;
+}
+
+.roam-block-container { /* Main text */
+  color: var(--contrast-colour);
+  background-color: var(--background-colour);
+}
+
+.rm-edit-view-wrapper { /* Remove avatars */
+  display: none;
+}
+
+/* Bullet */
+.simple-bullet-inner {
+  background-color: var(--highlight-colour-1) !important;
+}
+
+.roam-bullet-closed {
+  background-color: var(--contrast-colour);
+}
+
+.roam-bullet-closed .simple-bullet-inner {
+  background-color: var(--background-colour) !important;
+}
+
+/* === Content blocks === */
+
+.block-ref-count-button { /* Block reference count */
+  color: var(--contrast-colour) !important;
+}
+
+.rm-page-ref-link-color { /* Page link */
+  color: var(--title-colour);
+}
+
+.rm-page-ref-tag { /* Hashtag */
+  color: var(--contrast-colour);
+  opacity: 0.4;
+}
+
+.rm-block-ref:hover { /* Quote */
+  background-color: var(--contrast-colour);
+  color: var(--background-colour);
+}
+
+.rm-embed-container, .rm-embed-container .roam-block-container { /* Block embed */
+  background-color:  var(--edges-colour-semi-transparent);
+}
+
+/* External link */
+.rm-block-text a, .rm-block-text a:visited {
+  color: var(--title-colour);
+}
+
+rm-block-text a:hover {
+  color: var(--highlight-colour-1);
+}
+
+.rm-alias { /* Alias */
+  color: var(--title-colour);
+}
+
+.roam-highlight { /* Text highlight */
+  background-color: var(--highlight-colour-1);
+  color: var(--background-colour);
+}
+
+.rm-block-text button.bp3-button { /* Word count, Pomodoro */
+  background-color: var(--background-colour);
+  background-image: none;
+  border: 1px solid var(--edges-colour);
+}
+
+.rm-encrypted-block { /* Encrypted block */
+  background-color: var(--background-colour);
+  color: var(--contrast-colour);
+}
+
+.bp3-popover-target span { /* Calc block */
+  color: var(--title-colour) !important;
+}
+
+/* Datepicker */
+.bp3-datepicker {
+  background-color: var(--background-colour);
+  border: 1px solid var(--edges-colour);
+}
+
+.bp3-datepicker select {
+  color: var(--contrast-colour);
+}
+
+/* Query */
+.rm-query {
+  border: 1px solid var(--edges-colour);
+}
+
+.rm-query-title {
+  color: var(--contrast-colour) !important;
+  background-color: var(--edges-colour-semi-transparent) !important;
+}
+
+.bp3-slider .bp3-intent-primary, span.bp3-slider-label { /*Slider */
+  background-color: var(--title-colour) !important;
+}
+
+/* Diagram */
+.rm-block-text svg {
+  background-color: var(--background-colour) !important;
+  border: 1px solid var(--edges-colour) !important;
+}
+
+.rm-block-text svg rect {
+  fill: var(--background-colour);
+  stroke: var(--contrast-colour);
+}
+
+/* Kanban board */
+.kanban-board {
+  background-color: var(--background-colour);
+  border: 1px solid var(--edges-colour);
+}
+
+.kanban-column {
+  background-color: var(--edges-colour-semi-transparent);
+  border: 1px solid var(--edges-colour);
+}
+
+.kanban-card {
+  background-color: var(--background-colour);
+}
+
+/* === References section (bottom of page) === */
+
+.rm-reference-main, .rm-reference-main strong { /*References */
+  color: var(--contrast-colour) !important;
+}
+
+.rm-mentions .rm-ref-page-view-title a { /* References page title */
+  color: var(--title-colour);
+}
+
+.rm-reference-item { /* Reference item */
+  background-color: var(--background-colour);
+}
+
+.parent-path-wrapper { /* Breadcrumbs in reference */
+  color: var(--contrast-colour);
+}
+
+/* === Right sidebar === */
+
+#right-sidebar {
+  background-color: var(--background-colour) !important;
+}
+
+#roam-right-sidebar-content {
+  color: var(--title-colour);
+}
+
+#right-sidebar h1 a, #right-sidebar h2 a, #right-sidebar h3 a { /* Headings */
+  color: var(--title-colour);
+}
+
+/* === Popup menus === */
+
+/*Popup menu, Slash dropdown menu, Filter popup menu, Filter menu buttons */
+.bp3-menu, .bp3-elevation-3, .bp3-popover-content, .bp3-popover-content .bp3-button {
+  background-color: var(--background-colour) !important;
+  border: 1px solid var(--edges-colour);
+  color: var(--contrast-colour) !important;
+}
+
+.bp3-popover-arrow {
+  display: none;
+}
+
+.bp3-popover-content .bp3-button { /*Filter menu button */
+  background-image: none;
+}
+
+.bp3-button sub {
+  padding-left: 5px;
+}
+
+.bp3-menu button { /*Buttons in bullet popup menu */
+  background-color: var(--background-colour) !important;
+  border: none;
+}
