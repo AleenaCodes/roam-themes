@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 /* === Full page styling === */
+
+body, div, textarea {
+    font-family: 'Lato', sans-serif !important;
+}
 
 .roam-body {
   background-color: var(--background-colour);
@@ -41,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .roam-sidebar-container .log-button { /* Page titles */
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   color: var(--title-colour) !important;
 }
 
@@ -51,6 +57,7 @@ body::-webkit-scrollbar-thumb {
 
 .starred-pages .page { /* Starred page */
   color: var(--title-colour) !important;
+  font-weight: 300 !important;
 }
 
 #roam-sidebar-logo { /* Roam logo */
@@ -86,18 +93,18 @@ body::-webkit-scrollbar-thumb {
 
 .roam-article h1, .rm-title-display, .rm-title-display span { /* Page heading */
   color: var(--title-colour) !important;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Subtitles */
 h1.rm-level1 {
   color: var(--contrast-colour) !important;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2.rm-level2 {
   color: var(--contrast-colour);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3.rm-level3 {
