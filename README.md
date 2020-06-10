@@ -9,6 +9,7 @@ Import via `@import url('<themename>');` e.g. `@import url('https://aleenacodes.
 
 Things I've left alone (for now)
 
+- The graph overview page
 - Fullscreen diagrams
 - Todos in the done state
 - Code blocks
