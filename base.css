@@ -170,7 +170,7 @@ h3.rm-level3 {
   color: var(--contrast-colour) !important;
 }
 
-.rm-page-ref-link-color { /* Page link */
+.rm-page-ref-link-color, .rm-page-ref-namespace-color { /* Page link */
   color: var(--title-colour);
 }
 
