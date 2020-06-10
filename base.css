@@ -37,8 +37,9 @@ body::-webkit-scrollbar-thumb {
 
 /* All pages styling */
 
-#rm-all-pages-column-titles { /* Table headings */
+#rm-all-pages-column-titles, .sorted-header-text  { /* Table headings */
   background-color: var(--edges-colour);
+  color: var(--contrast-colour);
 }
 
 .rm-pages-row .bp3-control-indicator::before { /* Checkbox */
