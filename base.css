@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-/* === Full page styling === */
-
 body, div, textarea {
     font-family: 'Lato', sans-serif !important;
 }
+
+/* === Full page styling === */
 
 .roam-body {
   background-color: var(--background-colour);
@@ -33,6 +33,35 @@ body::-webkit-scrollbar-thumb {
 
 #buffer {
   display: none !important;
+}
+
+/* All pages styling */
+
+#rm-all-pages-column-titles { /* Table headings */
+  background-color: var(--edges-colour);
+}
+
+.rm-pages-row .bp3-control-indicator::before { /* Checkbox */
+  border: 1px solid var(--edges-colour);
+  background-color: var(--background-colour);
+}
+
+.rm-pages-row .rm-pages-title-text {
+  color: var(--contrast-colour);
+}
+
+.rm-pages-row .rm-pages-col > span {
+  color: var(--title-colour);
+}
+
+.rm-pages-row .rm-clickable-pill {
+  background-color: var(--highlight-colour-1);
+  color: var(--background-colour);
+}
+
+.rm-pages-row .empty-pill {
+  background-color: var(--edges-colour);
+  color: var(--contrast-colour);
 }
 
 /* === Navigation styling === */
