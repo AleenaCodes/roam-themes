@@ -161,7 +161,7 @@ h3.rm-level3 {
 }
 
 .roam-bullet-closed {
-  background-color: var(--contrast-colour);
+  background-color: var(--contrast-colour) !important;
 }
 
 .roam-bullet-closed .simple-bullet-inner {
