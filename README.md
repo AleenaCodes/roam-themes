@@ -9,7 +9,7 @@ A collection of themes for Roam Research
 
 Import via `@import url('<themename>');` e.g. `@import url('https://aleenacodes.github.io/roam-themes/mermaid-dark.css');`
 
-See [Applying Custom Themes for your RoamResearch Knowledge Graph](https://www.youtube.com/watch?v=UY-sAC2eGyI) for more details on using custom CSS in Roam 
+See [Applying Custom Themes for your RoamResearch Knowledge Graph](https://www.youtube.com/watch?v=UY-sAC2eGyI) for more details on using custom CSS in Roam
 
 ## Mermaid Dark
 
@@ -18,6 +18,22 @@ See [Applying Custom Themes for your RoamResearch Knowledge Graph](https://www.y
 ## Mermaid Light
 
 ![Mermaid Dark](/images/mermaid-light.png)
+
+## Bubblegum Dark
+
+![Bubblegum Dark](/images/bubblegum-dark.png)
+
+## Bubblegum Light
+
+![Bubblegum Dark](/images/bubblegum-light.png)
+
+## Lilac Dark
+
+![Lilac Dark](/images/lilac-dark.png)
+
+## Lilac Light
+
+![Lilac Dark](/images/lilac-light.png)
 
 Things I've left alone (for now)
 
