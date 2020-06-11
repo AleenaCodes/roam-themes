@@ -51,6 +51,10 @@ body::-webkit-scrollbar-thumb {
   color: var(--contrast-colour);
 }
 
+.rm-pages-row .title-children-text {
+  color: var(--edges-colour);
+}
+
 .rm-pages-row .rm-pages-col > span {
   color: var(--title-colour);
 }
