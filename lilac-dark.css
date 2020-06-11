@@ -1,0 +1,11 @@
+@import url('https://aleenacodes.github.io/roam-themes/base.css');
+
+/* === Colours === */
+:root {
+  --background-colour: #333333;
+  --edges-colour: #394b59;
+  --edges-colour-semi-transparent: rgb(57, 75, 89, 0.2);
+  --contrast-colour: #EAEAEA;
+  --title-colour: #9D4EDD;
+  --highlight-colour-1: #E0AAFF;
+}
