@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 
 /* All pages styling */
 
-#rm-all-pages-column-titles, .sorted-header-text  { /* Table headings */
+#rm-all-pages-column-titles, .sorted-header-text, #rm-all-pages-column-titles .rm-pages-title-col { /* Table headings */
   background-color: var(--edges-colour);
   color: var(--contrast-colour);
 }
