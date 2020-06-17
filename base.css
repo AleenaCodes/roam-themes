@@ -250,13 +250,13 @@ rm-block-text a:hover {
 }
 
 /* Diagram */
-.roam-center svg {
+.roam-center svg, #right-sidebar svg {
   color: var(--contrast-colour);
   background-color: var(--background-colour) !important;
   border: 1px solid var(--edges-colour) !important;
 }
 
-.roam-center svg rect {
+.roam-center svg rect, #right-sidebar svg rect {
   fill: var(--background-colour);
   stroke: var(--contrast-colour);
 }
