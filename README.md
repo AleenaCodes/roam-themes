@@ -1,6 +1,6 @@
 # roam-themes
 
-A collection of themes for Roam Research
+A collection of pink / purple / blue themes for Roam Research
 
 - Most changes are just colour to make things easier on the eye
 - Also did a little bit of hiding things and adding spacing
