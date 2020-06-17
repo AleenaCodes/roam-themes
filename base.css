@@ -168,6 +168,10 @@ h3.rm-level3 {
   background-color: var(--background-colour) !important;
 }
 
+.block-highlight-blue { /* Block select highlighting */
+  background-color: var(--edges-colour);
+}
+
 /* === Content blocks === */
 
 .block-ref-count-button { /* Block reference count */
