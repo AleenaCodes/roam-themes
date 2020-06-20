@@ -229,6 +229,10 @@ rm-block-text a:hover {
   color: var(--title-colour) !important;
 }
 
+select { /* Options list and other form elements */
+  background-color: var(--background-colour);
+}
+
 /* Datepicker */
 .bp3-datepicker {
   background-color: var(--background-colour);
