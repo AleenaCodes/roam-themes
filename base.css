@@ -76,6 +76,15 @@ body::-webkit-scrollbar-thumb {
   border-right: 1px solid var(--edges-colour);
 }
 
+/* Graphs menu */
+.rm-graph-dropdown li, .rm-graph-dropdown a {
+  color: var(--highlight-colour-1) !important;
+}
+
+.rm-graph-dropdown h6 {
+  color: var(--contrast-colour) !important;
+}
+
 .roam-sidebar-container button div { /* Email */
   color: var(--contrast-colour) !important;
 }
