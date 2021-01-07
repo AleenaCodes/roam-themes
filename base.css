@@ -187,7 +187,7 @@ h3.rm-level3 {
   color: var(--contrast-colour) !important;
 }
 
-.rm-page-ref-link-color, .rm-page-ref-namespace-color { /* Page link */
+.rm-page-ref, .rm-page-ref--link, .rm-page-ref--namespace { /* Page link */
   color: var(--title-colour);
 }
 
