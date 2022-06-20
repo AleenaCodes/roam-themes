@@ -114,11 +114,11 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid var(--edges-colour);
 }
 
-.rm-saving-remote { /* Saving icon (saving) */
+.rm-sync--saving-remote { /* Saving icon (saving) */
   background-color: var(--highlight-colour-1) !important;
 }
 
-.rm-synced { /* Saving icon (saved) */
+.rm-sync--synced { /* Saving icon (saved) */
   background-color: var(--title-colour) !important;
 }
 
